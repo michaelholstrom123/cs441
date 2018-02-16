@@ -1,16 +1,35 @@
-﻿using Xamarin.Forms;
+﻿using System.Diagnostics;
+using Prism;
+using Prism.Ioc;
+using Prism.Unity;
+using Xamarin.Forms;
 
 namespace PrismIntro
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        public App()
+       // public App()
+      
+
+       //     MainPage = new PrismIntroPage();
+       
+        public App(IPlatformInitializer intializer = null):base(intializer){ }
+
+        protected override void OnInitialized()//Need for Prism to intialize component.
         {
+            Debug.WriteLine($"****{this.GetType().Name}.{nameof(OnInitialized)}");
             InitializeComponent();
 
-            MainPage = new PrismIntroPage();
+            NavigationService.NavigateAsync(nameof(PrismIntroPage));
+        }
+        protected override void RegisterTypes(Prism.Ioc.IContainerRegistry containerRegistry) //One of first called.
+        {
+            Debug.WriteLine($"**** {this.GetType().Name}.{nameof(RegisterTypes)}");
+
+            containerRegistry.RegisterForNavigation<PrismIntroPage, IntroToPrismsPageViewModel>();
         }
 
+       
         protected override void OnStart()
         {
             // Handle when your app starts

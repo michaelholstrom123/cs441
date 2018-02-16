@@ -7,6 +7,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Prism;
+using Prism.Ioc;
 
 namespace PrismIntro.Droid
 {
@@ -23,6 +25,13 @@ namespace PrismIntro.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App());
+        }
+        public class AndroidInitializer : IPlatformInitializer
+        {
+            public void RegisterTypes(IContainerRegistry containerRegistry)
+            {
+              
+            }
         }
     }
 }
