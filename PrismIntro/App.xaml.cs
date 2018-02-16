@@ -2,6 +2,8 @@
 using Prism;
 using Prism.Ioc;
 using Prism.Unity;
+using PrismIntro.ViewModels;
+using PrismIntro.Views;
 using Xamarin.Forms;
 
 namespace PrismIntro

@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace PrismIntro
+namespace PrismIntro.Views
 {
     public partial class PrismIntroPage : ContentPage
     {

@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:PrismIntro" 
-    x:Class="PrismIntro.PrismIntroPage">
+    x:Class="PrismIntro.Views.PrismIntroPage">
 	<Label
         Text="Welcome to Xamarin Forms!"
         VerticalOptions="Center" 

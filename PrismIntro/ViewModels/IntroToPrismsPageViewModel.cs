@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using Prism.Mvvm;
 
-namespace PrismIntro
+namespace PrismIntro.ViewModels
 {
     public class IntroToPrismsPageViewModel : BindableBase
     {
