@@ -3,27 +3,32 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:PrismIntro" 
-    x:Class="PrismIntro.Views.PrismIntroPage">
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    x:Class="PrismIntro.Views.PrismIntroPage"
+    Title="{Binding Title}">
     <StackLayout
         VerticalOptions="StartAndExpand">
         <Label 
-            Text="Login"/>
+            HorizontalTextAlignment="Center"
+            Text="Login Page"/>    
         <Entry
             x:Name="UserName"
-            PlaceholderColor="Red"
-            Placeholder="user"
-            Text="" />
-        <Label
-            Text="Password"/>
+            PlaceholderColor="Black"
+            Placeholder="Username"
+            Text="{Binding userC}" />
         <Entry
             x:Name="passwordEntry"
             IsPassword="false"
-            Placeholder="pass"
-            PlaceholderColor="Red"
-            Text=""/>
+            Placeholder="Password"
+            PlaceholderColor="Black"
+            Text="{Binding userPass}"/>
         <Button
-            Text="Login"/>
-           
+            Text="Login"
+            Command="{Binding LoginPageCommand}" />
+        <Button
+            Text="Register"
+            Command="{Binding NavToRegisterCommand}" />
         </StackLayout>
        
 </ContentPage>
