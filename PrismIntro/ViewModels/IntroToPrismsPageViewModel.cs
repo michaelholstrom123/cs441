@@ -84,9 +84,11 @@ namespace PrismIntro.ViewModels
         private void OnNavToMainPage()
         {
             Debug.WriteLine($"**** {this.GetType().Name}.{nameof(OnNavToMainPage)}");
+
             if(dict.ContainsKey(userC))
             {
-                if(dict.ContainsValue(userPass))
+                
+                if(dict[userC].Equals(userPass))
                 {
                     _navigationService1.NavigateAsync("/MainPage/");
                 }
