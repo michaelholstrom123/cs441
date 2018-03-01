@@ -84,6 +84,11 @@ namespace PrismIntro.ViewModels
         private void OnNavToMainPage()
         {
             Debug.WriteLine($"**** {this.GetType().Name}.{nameof(OnNavToMainPage)}");
+            if(userC == null || userPass == null)
+            {
+                userPass = "";
+                userC = "";
+            }
 
             if(dict.ContainsKey(userC))
             {

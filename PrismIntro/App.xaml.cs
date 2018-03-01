@@ -20,7 +20,7 @@ namespace PrismIntro
         {
             Debug.WriteLine($"****{this.GetType().Name}.{nameof(OnInitialized)}");
             InitializeComponent();
-            await NavigationService.NavigateAsync("RegisterPage/PrismIntroPage");
+            await NavigationService.NavigateAsync("PrismIntroPage");
 
 
         }

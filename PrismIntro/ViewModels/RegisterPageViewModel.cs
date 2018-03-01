@@ -54,6 +54,14 @@ namespace PrismIntro.ViewModels
         }
         private void AddUserCommandPage()
         {
+            if (User == null || Password == null)
+            {
+                User = "";
+                Password = "";
+                _navigationService.NavigateAsync("app:///PrismIntroPage");
+                return;
+
+            }
             PrismIntro.ViewModels.IntroToPrismsPageViewModel.dict.Add(_user, _password);
             _navigationService.NavigateAsync("app:///PrismIntroPage");
         }
