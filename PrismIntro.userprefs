@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{ED9A05B5-123C-4C93-A8B7-E30B9E6F4E5A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cs441-JuanBranch Status">
+    <Files>
+      <File FileName="cs441-JuanBranch Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PrismIntro.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FDEE685F-F3B9-4B78-8FF0-638FD19BA1C6" />
+  <MultiItemStartupConfigurations />
+</Properties>
